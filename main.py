@@ -22,3 +22,9 @@ while game_is_on:
         player.go_on_start()
         scoreboard.level_up()
 
+    if scoreboard.level == 2:
+        """CHANGE IT WHEN THE COLLISION OCCUR"""
+        scoreboard.game_over()
+        game_is_on = False
+
+screen.exitonclick()
