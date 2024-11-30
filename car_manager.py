@@ -1,8 +1,7 @@
 from turtle import Turtle
 from random import randint, choice
 COLORS = ["red", "orange", "yellow", "black", "blue", "purple"]
-STARTING_MOVE_DISTANCE = 5
-MOVE_INCREMENT = 10
+STARTING_MOVE_DISTANCE = 8
 
 
 class CarManager:
@@ -30,5 +29,8 @@ class CarManager:
     def run_over(self):
         self.car_speed = 0
 
-    def car_speed_up(self):
-        self.car_speed += MOVE_INCREMENT
+    # def car_speed_up(self):
+        """ I think I have found a better way to manage difficulty level
+        after increment car speed the number of cars showing up , were lesser every time
+        I'm turning it off"""
+        # self.car_speed += MOVE_INCREMENT
